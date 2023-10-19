@@ -1,0 +1,40 @@
+services:
+  conexaoif-loadbalancer:
+    image: nginx:1.25.2-alpine
+    container_name: conexaoif-loadbalancer
+    volumes:
+      - ./default.conf:/etc/nginx/conf.d/default.conf
+    ports:
+      - "8080:80"
+
+  node1:
+    image: nginx:1.25.2-alpine
+    container_name: node1
+    volumes:
+      - C:\Users\marqu\OneDrive\Área de Trabalho\conexaoIF-loadbalancer\build:/usr/share/nginx/html
+    ports:
+      - "80"
+
+  node2:
+    image: nginx:1.25.2-alpine
+    container_name: node2
+    volumes:
+      - C:\Users\marqu\OneDrive\Área de Trabalho\conexaoIF-loadbalancer\build:/usr/share/nginx/html
+    ports:
+      - "80"
+
+  node3:
+    image: nginx:1.25.2-alpine
+    container_name: node3
+    volumes:
+      - C:\Users\marqu\OneDrive\Área de Trabalho\conexaoIF-loadbalancer\build:/usr/share/nginx/html
+    ports:
+      - "80"
+
+  node4:
+    image: nginx:1.25.2-alpine
+    container_name: node4
+    volumes:
+      - C:\Users\marqu\OneDrive\Área de Trabalho\conexaoIF-loadbalancer\build:/usr/share/nginx/html
+    ports:
+      - "80"
