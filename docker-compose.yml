@@ -30,11 +30,3 @@ services:
       - C:\Users\marqu\OneDrive\Área de Trabalho\conexaoIF-loadbalancer\build:/usr/share/nginx/html
     ports:
       - "80"
-
-  node4:
-    image: nginx:1.25.2-alpine
-    container_name: node4
-    volumes:
-      - C:\Users\marqu\OneDrive\Área de Trabalho\conexaoIF-loadbalancer\build:/usr/share/nginx/html
-    ports:
-      - "80"
