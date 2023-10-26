@@ -3,7 +3,7 @@
 
 ## Para executar o projeto via Docker Compose:
 
-docker compose up \
+docker compose up
 
 ## Equipe Desenvolvedora
 José Marcus: https://github.com/joseMarcus \
